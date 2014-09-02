@@ -1,0 +1,583 @@
+/* ==============
+    Font-face declaration
+    ============== */
+    @font-face {
+        font-family: "Mediawiki";
+        src: url("mediawiki.eot");
+        src: url("mediawiki.eot#iefix") format("embedded-opentype"),
+        url("mediawiki.woff") format("woff"),
+        url("mediawiki.ttf") format("truetype"),
+        url("mediawiki.svg") format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+    .icon:after, .icon:before {
+        font-family: 'Mediawiki';
+        font-size: 20px;
+        font-style: normal;
+    }
+    .i-facebook:before {
+        content: "\e000";
+    }
+    .i-detail:before {
+        content: "\e001";
+    }
+    .i-globe:before {
+        content: "\e002";
+    }
+    .i-stats:before {
+        content: "\e003";
+    }
+    .i-heart:before {
+        content: "\e004";
+    }
+    .i-bulb:before {
+        content: "\e005";
+    }
+    .i-linkedin:before {
+        content: "\e006";
+    }
+    .i-mail:before {
+        content: "\e007";
+    }
+    .i-file:before {
+        content: "\e008";
+    }
+    .i-file1:before {
+        content: "\e009";
+    }
+    .i-phone:before {
+        content: "\e00a";
+    }
+    .i-fullscreen:before {
+        content: "\e00b";
+    }
+    .i-more:before {
+        content: "\e00c";
+    }
+    .i-search:before {
+        content: "\e00d";
+    }
+    .i-settings:before {
+        content: "\e00e";
+    }
+    .i-star:before {
+        content: "\e00f";
+    }
+    .i-twitter:before {
+        content: "\e010";
+    }
+    .i-layout:before {
+        content: "\e011";
+    }
+    .i-tool:before {
+        content: "\e012";
+    }
+
+    /*******************/
+
+    html, button, input, select, textarea {
+        color: #343838;
+    }
+    html {
+        font-size: 1em;
+        line-height: 1.4;
+        height: 100%;
+    }
+    ::-moz-selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+    ::selection {
+        background: #b3d4fc;
+        text-shadow: none;
+    }
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+    }
+    audio, canvas, img, video {
+        vertical-align: middle;
+    }
+    fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    textarea {
+        resize: vertical;
+    }
+    .browsehappy {
+        margin: 0.2em 0;
+        background: #ccc;
+        color: #000;
+        padding: 0.2em 0;
+    }
+    body {
+        font: 16px/26px 'Pontano Sans', sans-serif, Arial;
+        height: 100%;
+    }
+    .wrapper {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .header-container {
+        border-bottom: 5px solid #00B4CC;
+    }
+    .footer-container, .main aside {
+        border-top: 5px solid #00B4CC;
+        margin-top: 90px;
+    }
+    .header-container, .footer-container, .main aside {
+        background: #343838;
+    }
+    .title {
+        color: white;
+        text-align: center;
+    }
+    #paginator {
+        margin-top: -50px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    .pagLink {
+        min-width: 30px;
+        display: inline-block;
+        color: #222;
+        text-decoration: none;
+        border: 1px solid #CCC;
+        border-radius: 5px;
+        margin-right: 2px;
+        cursor: pointer;
+        height: 25px;
+        font-size: 12px;
+    }
+    .pagLink.active {
+        background: #00B4CC;
+    }
+    .pagLink:hover {
+        background: #CCC;
+    }
+    .mimetype {
+        font-size: 10px;
+        margin-left: 30px;
+    }
+    #petalos, #petalosHeader {
+        -moz-transform-origin: 51% 53%;
+        -webkit-transform-origin: 51% 53%;
+        -o-transform-origin: 51% 53%;
+        transform-origin: 51% 53%;
+    }
+    .loader {
+        display: none;
+        background: rgba(255,255,255,.8);
+        width: 100%;
+        height: 120%;
+        position: absolute;
+        top: -12%;
+        left: 0;
+        z-index: 2;
+    }
+    .wikiLogoHeader {
+        position: absolute;
+        top: -5%;
+        z-index: 0;
+        width: 70%;
+        left: 15%;
+    }
+    .wikiLogoHeaderFixed{
+        position: absolute;
+        top: -85%;
+        opacity: .3;
+    }
+    .header {
+        position: relative;
+        top: 35%;
+    }
+
+/* ==============
+    MOBILE: Menu
+    ============== */
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+        padding: 15px 0;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        background: #005F6B;
+    }
+    nav a:hover, nav a:visited {
+        color: white;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+/* ==============
+    MOBILE: Main
+    ============== */
+
+    .main {
+        padding: 30px 0;
+    }
+    .main article h1 {
+        font-size: 2em;
+    }
+    .main aside {
+        color: white;
+        padding: 0px 5% 10px;
+    }
+    .footer-container footer {
+        color: #FFF;
+        padding: 5px 0;
+        height: 65px;
+    }
+/* ===============
+    ALL: IE Fixes
+    =============== */
+
+    .ie7 .title {
+        padding-top: 20px;
+    }
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+.searchBox {
+    display: block;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    color: #FFF;
+    margin: 25px auto;
+}
+.searchInput {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: -15px;
+    border: none;
+    width: 75%;
+}
+.container {
+    min-height: 100%;
+    margin: 0 auto -80px;
+}
+footer h4 {
+    text-align: right;
+    font-family: 'Pontano Sans';
+}
+.btn {
+    padding: 15px 5px 5px 50px;
+    background: #00B4CC;
+    border: 1px solid #343838;
+    font-family: 'Pontano Sans';
+    color: #FFF;
+    font-size: 13px;
+    transition: all .1s linear;
+}
+.btn:hover {
+    background: #FFF;
+    border: 1px solid #00B4CC;
+    color: #00B4CC;
+    box-shadow: 0 0 6px inset;
+}
+.btn:active {
+    background: #343838;
+    color: #00B4CC;
+    outline: none;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 6px inset;
+}
+.buttonsBox {
+    margin-top: 5px;
+}
+.searchInput:focus {
+    outline: none;
+    box-shadow: 0 0 6px #00B4CC inset;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+#btnSearch:before {
+    color: #00B4CC;
+    font-size: 65px;
+    position: relative;
+    top: 19px;
+    left: -16px;
+    cursor: pointer;
+}
+#btnSearch:hover:before {
+    color: #DDD;
+}
+#btnSearch:active:before {
+    color: #AAA;
+}
+
+#resultsInfo {
+    display: none;
+    margin: 10px;
+    color: #999;
+}
+
+#resultsNum {
+    color: #222;
+}
+
+.image.mosaic {
+    max-width: 300px;
+    float: left;
+    height: 235px;
+    margin: 1px;
+    border: 1px solid #CCC;
+    padding: 2px;
+    border-radius: 2px;
+}
+.image img {
+    max-width: 100%;
+    max-height: 70%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.dataInfo {
+    float: left;
+    clear: both;
+    font-size: 12px;
+}
+.photoContainer {
+    text-align: center;
+    height: 150px;
+}
+.helper {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#petalosHeader{
+    -webkit-animation: rotate 60s linear 0s infinite;
+    animation: rotate 60s linear 0s infinite;
+}
+
+#petalos{
+    -webkit-animation: rotate 10s linear 0s infinite;
+    animation: rotate 10s linear 0s infinite;
+}
+
+.loaderText {
+    font-size: 1.5em;
+    color: #222;
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+   @media only screen and (min-width: 480px) {
+    /* ====================
+    INTERMEDIATE: Menu
+    ==================== */
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+    nav li:first-child a {
+        margin-left: 0;
+    }
+    nav li:last-child a {
+        margin-right: 0;
+    }
+    /* ========================
+    INTERMEDIATE: IE Fixes
+    ======================== */
+    nav ul li {
+        display: inline;
+    }
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+    .searchInput {
+        max-width: 500px;
+    }
+    .title {
+        font-size: 2em;
+    }
+    #wikiLogo {
+        width: 70%;
+        margin: 25% auto;
+        display: block;
+    }
+}
+@media only screen and (min-width: 768px) {
+    /* ============
+    WIDE: Menu
+    ============ */
+    nav {
+        float: right;
+        width: 38%;
+    }
+    /* ============
+    WIDE: Main
+    ============ */
+    .main article {
+        float: left;
+        width: 57%;
+    }
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+@media only screen and (min-width: 1140px) {
+    /* ===============
+    Maximal Width
+    =============== */
+    .wrapper {
+        width: 1026px;
+        /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+    .loaderText {
+        font-size: 4em;
+        top: 70%;
+    }
+    #wikiLogo{
+        margin: auto;
+    }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+   .ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+.invisible {
+    visibility: hidden;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+   @media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a, a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href)")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title)")";
+    }
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+        content: "";
+    }
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr, img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    @page {
+        margin: 0.5cm;
+    }
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from { -moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+}
+@keyframes rotate {
+    from { transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
